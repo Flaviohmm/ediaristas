@@ -1,5 +1,9 @@
+import SafeEnvironment from 'ui/components/feedback/SafeEnvironment/SafeEnvironment'
+
 export default function Home() {
   return (
-    <div></div>
+    <div>
+      <SafeEnvironment />
+    </div>
   )
 }
