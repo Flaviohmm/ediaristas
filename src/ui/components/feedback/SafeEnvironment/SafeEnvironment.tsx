@@ -5,7 +5,9 @@ import { Container } from "@material-ui/core";
 const SafeEnvironment = () => {
   return (
     <SafeEnvironmentContainer>
-      <Container>Ambiente Seguro</Container>
+      <Container>
+        Ambiente Seguro <i className={"twf-lock"} />
+      </Container>
     </SafeEnvironmentContainer>
   );
 };
