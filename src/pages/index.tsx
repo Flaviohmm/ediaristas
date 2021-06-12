@@ -2,8 +2,12 @@ import SafeEnvironment from "ui/components/feedback/SafeEnvironment/SafeEnvironm
 import PageTitle from "ui/components/data-display/PageTitle/PageTitle";
 import UserInformation from "ui/components/data-display/UserInformation/UserInformation";
 import TextFieldMask from "ui/components/inputs/TextFieldMask/TextFieldMask";
-import { Button, Typography } from "@material-ui/core";
-import { FormElementsContainer } from "ui/styles/pages/index.style";
+import { Button, Typography, Container } from "@material-ui/core";
+import {
+  FormElementsContainer,
+  ProfissionaisPaper,
+  ProfissionaisContainer,
+} from "ui/styles/pages/index.style";
 
 export default function Home() {
   return (
@@ -16,31 +20,67 @@ export default function Home() {
         }
       />
 
-      <FormElementsContainer>
-        <TextFieldMask
-          mask={"99.999-999"}
-          label={"Digite seu CEP"}
-          fullWidth
-          variant={"outlined"}
-        />
+      <Container>
+        <FormElementsContainer>
+          <TextFieldMask
+            mask={"99.999-999"}
+            label={"Digite seu CEP"}
+            fullWidth
+            variant={"outlined"}
+          />
 
-        <Typography color={"error"}>CEP Inválido</Typography>
+          <Typography color={"error"}>CEP Inválido</Typography>
 
-        <Button
-          variant={"contained"}
-          color={"secondary"}
-          sx={{ width: "220px" }}
-        >
-          Buscar
-        </Button>
-      </FormElementsContainer>
+          <Button
+            variant={"contained"}
+            color={"secondary"}
+            sx={{ width: "220px" }}
+          >
+            Buscar
+          </Button>
+        </FormElementsContainer>
 
-      <UserInformation
-        name={"Flavio Mendes"}
-        picture={"https://github.com/Flaviohmm.png"}
-        rating={3}
-        description={"Natal"}
-      />
+        <ProfissionaisPaper>
+          <ProfissionaisContainer>
+            <UserInformation
+              name={"Flavio Mendes"}
+              picture={"https://github.com/Flaviohmm.png"}
+              rating={3}
+              description={"Natal"}
+            />
+            <UserInformation
+              name={"Flavio Mendes"}
+              picture={"https://github.com/Flaviohmm.png"}
+              rating={3}
+              description={"Natal"}
+            />
+            <UserInformation
+              name={"Flavio Mendes"}
+              picture={"https://github.com/Flaviohmm.png"}
+              rating={3}
+              description={"Natal"}
+            />
+            <UserInformation
+              name={"Flavio Mendes"}
+              picture={"https://github.com/Flaviohmm.png"}
+              rating={3}
+              description={"Natal"}
+            />
+            <UserInformation
+              name={"Flavio Mendes"}
+              picture={"https://github.com/Flaviohmm.png"}
+              rating={3}
+              description={"Natal"}
+            />
+            <UserInformation
+              name={"Flavio Mendes"}
+              picture={"https://github.com/Flaviohmm.png"}
+              rating={3}
+              description={"Natal"}
+            />
+          </ProfissionaisContainer>
+        </ProfissionaisPaper>
+      </Container>
     </div>
   );
 }
